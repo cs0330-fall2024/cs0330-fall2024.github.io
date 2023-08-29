@@ -18,12 +18,12 @@
 
 @font-face {
   font-family: TWDHeaderFont;
-  src: url("../img/dafont/DeadFontWalking.otf");
+  src: url("../img/dafont/ThomasAndFriends.otf");
 }
 
 @font-face {
   font-family: TWDTitleFont;
-  src: url("../img/dafont/DeadKansas.ttf");
+  src: url("../img/dafont/ThomasAndFriends.ttf");
 }
 
 @font-face {
@@ -52,7 +52,12 @@ html {
   height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 35px 0;
   /*text-transform: uppercase;*/
   /*font-family: "Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
@@ -81,7 +86,8 @@ p {
   }
 }
 
-blockquote, tagline {
+blockquote,
+tagline {
   font-family: ComicText;
   font-size: 1.1em;
   line-height: 1.8em;
@@ -119,21 +125,29 @@ th {
 
 }
 
-td, th {
+td,
+th {
   padding: 8px 20px 8px 20px;
   text-align: center;
 }
 
 /* Responsiveness in tables */
-@media only screen and (max-width: 990px), (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (max-width: 990px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
 
   /* Force table to not be like tables anymore */
-  table, thead, tbody, th, td, tr {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
     display: block;
   }
 
   /* Hide table headers (but not display: none;, for accessibility) */
-  thead tr, tr th {
+  thead tr,
+  tr th {
     position: absolute;
     top: -9999px;
     left: -9999px;
@@ -575,7 +589,6 @@ footer a {
 
 .hamburger-icon {
   color: #323c18
-
 }
 
 @media(max-width:768px) {
@@ -692,7 +705,9 @@ footer {
 
 
 @media(max-width:768px) {
-  html, body {
+
+  html,
+  body {
     width: 100%;
     overflow-x: hidden;
     background-color: var(--green-bg);
@@ -726,7 +741,12 @@ footer {
     border: 1px solid #000;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin: 15px 0;
   }
 
@@ -891,7 +911,9 @@ body {
   border-radius: 5px;
 }
 
-.course-logo-font, .course-logo-font:hover, .course-logo-font:focus {
+.course-logo-font,
+.course-logo-font:hover,
+.course-logo-font:focus {
   font-family: TWDHeaderFont;
   font-size: 35px;
   color: var(--heading-text-color);
