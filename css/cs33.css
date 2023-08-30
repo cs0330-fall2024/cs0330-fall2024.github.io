@@ -3,22 +3,24 @@
  */
 
 :root {
-  --heading-text-color: #240f02;
+  --heading-text-color: #fe0f04;
   --body-text-color: #2a1a03;
-  --light-tan-bg: #d7bc72;
-  --lighter-tan-bg: #f0dca3;
-  --green-bg: #cad9c9;
-  --light-green-bg: #9bb899;
+  --light-tan-bg: rgb(214, 245, 254);
+  --lighter-tan-bg: #ffffff;
+  --green-bg: #cbf4ff;
+  --light-green-bg: #ff817a;
 
-  --camo-brown: #837957;
-  --camo-gray: rgb(204 204 204);
+  --camo-brown: #cbf4ff;
+  --camo-gray: #cbf4ff;
 
-  --comic-red: #cc605f;
+  --comic-red: #fcd108;
+
+  --yellow-font:  #35cffe;
 }
 
 @font-face {
   font-family: TWDHeaderFont;
-  src: url("../img/dafont/ThomasAndFriends.otf");
+  src: url("../img/dafont/ThomasAndFriends.ttf");
 }
 
 @font-face {
@@ -28,12 +30,12 @@
 
 @font-face {
   font-family: ComicText;
-  src: url("../img/dafont/adamwarrenpro.ttf");
+  src: url("../img/sf_slapstick_comic/SF Slapstick Comic.ttf");
 }
 
 @font-face {
   font-family: ComicTextBold;
-  src: url("../img/dafont/adamwarrenpro-bold.ttf");
+  src: url("../img/sf_slapstick_comic/SF Slapstick Comic.ttf");
 }
 
 * {
@@ -68,7 +70,7 @@ h6 {
 }
 
 h3 {
-  color: #282512;
+  color: #fe0f04;
   text-shadow: 1px 2px 0px rgb(64 92 73 / 70%);
 }
 
@@ -121,6 +123,7 @@ th {
   height: 3.0em;
   background-color: var(--comic-red);
   font-family: ComicTextBold;
+  color: var(--yellow-font);
   font-size: 1.1em;
 
 }
@@ -317,7 +320,7 @@ th {
 }
 
 #course-info h3 {
-  color: #2a2824;
+  color: #fe0f04;
   text-shadow: 1px 2px 0px rgb(167 139 36 / 70%);
 }
 
@@ -410,7 +413,7 @@ th {
 
 /* Custom section types */
 .content-section:before {
-  background-color: #323c18;
+  background-color: #fcd108;
   height: 35px;
   width: 100%;
   left: 0;
@@ -543,6 +546,7 @@ footer a {
   transition: background .3s ease-in-out;
   color: #222e23;
   font-family: ComicTextBold;
+  color: var(--yellow-font);
   font-size: 1.6rem;
 }
 
@@ -588,7 +592,7 @@ footer a {
 }
 
 .hamburger-icon {
-  color: #323c18
+  color: #fcd108
 }
 
 @media(max-width:768px) {
@@ -648,7 +652,8 @@ footer a {
 }
 
 #docs-and-guides {
-  background-image: url('../img/twdbg.jpg');
+  /* background-image: url('../img/twdbg.jpg'); */
+  background-image: url('../img/happy thomas.jpg');
   background-size: 600px;
 }
 
@@ -661,6 +666,7 @@ footer a {
 .resources-header {
   font-family: ComicTextBold;
   font-size: 1.8rem;
+  color: var(--yellow-font);
   /* margin-left: -2rem; */
 }
 
