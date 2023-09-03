@@ -944,6 +944,16 @@ body {
   padding: 0;
 }
 
+.hta-flexbox {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  margin: auto;
+  padding: 0;
+}
 
 .ta-member {
   margin: 2%;
