@@ -109,7 +109,6 @@ ul {
 
 /* Tables */
 table {
-
   background-color: var(--light-green-bg);
   font-size: 1.1em;
   margin-bottom: 40px;
@@ -121,11 +120,10 @@ tr:nth-child(2n+1) {
 
 th {
   height: 3.0em;
-  background-color: var(--comic-red);
+  background-color: white; /* var(--comic-red); */
   font-family: ComicTextBold;
   color: var(--yellow-font);
   font-size: 1.1em;
-
 }
 
 td,
@@ -934,17 +932,6 @@ body {
 }
 
 .staff-flexbox {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  flex-wrap: wrap;
-
-  margin: auto;
-  padding: 0;
-}
-
-.hta-flexbox {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
