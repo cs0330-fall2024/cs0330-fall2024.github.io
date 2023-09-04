@@ -426,6 +426,22 @@ th {
   padding-bottom: 30px;
 }
 
+.content-section-1:before {
+  background-color: #cbf4ff;
+  height: 35px;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  margin-top: -60px !important;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.content-section-1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .inset-box {
   border-radius: 5px;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.15);
@@ -675,7 +691,7 @@ footer {
 .intro {
   display: table;
   width: 100%;
-  height: 100vh;
+  height: 10vh;
   text-align: center;
   color: #D21242;
   background: no-repeat top center scroll;
@@ -689,7 +705,7 @@ footer {
   display: table-cell;
   vertical-align: middle;
   /* padding-bottom: 20px; */
-  padding-top: 50px;
+  /* padding-top: 50px; */
   /* background-color: #c0e6b6; */
 
   background-color: var(--green-bg);
