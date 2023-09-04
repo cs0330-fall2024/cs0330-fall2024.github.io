@@ -3,37 +3,39 @@
  */
 
 :root {
-  --heading-text-color: #240f02;
+  --heading-text-color: #fe0f04;
   --body-text-color: #2a1a03;
-  --light-tan-bg: #d7bc72;
-  --lighter-tan-bg: #f0dca3;
-  --green-bg: #cad9c9;
-  --light-green-bg: #9bb899;
+  --light-tan-bg: rgb(214, 245, 254);
+  --lighter-tan-bg: #ffffff;
+  --green-bg: #cbf4ff;
+  --light-green-bg: #ff817a;
 
-  --camo-brown: #837957;
-  --camo-gray: rgb(204 204 204);
+  --camo-brown: #cbf4ff;
+  --camo-gray: #cbf4ff;
 
-  --comic-red: #cc605f;
+  --comic-red: #fcd108;
+
+  --yellow-font:  #35cffe;
 }
 
 @font-face {
   font-family: TWDHeaderFont;
-  src: url("../img/dafont/DeadFontWalking.otf");
+  src: url("../img/dafont/ThomasAndFriends.ttf");
 }
 
 @font-face {
   font-family: TWDTitleFont;
-  src: url("../img/dafont/DeadKansas.ttf");
+  src: url("../img/dafont/ThomasAndFriends.ttf");
 }
 
 @font-face {
   font-family: ComicText;
-  src: url("../img/dafont/adamwarrenpro.ttf");
+  src: url("../img/sf_slapstick_comic/SF Slapstick Comic.ttf");
 }
 
 @font-face {
   font-family: ComicTextBold;
-  src: url("../img/dafont/adamwarrenpro-bold.ttf");
+  src: url("../img/sf_slapstick_comic/SF Slapstick Comic.ttf");
 }
 
 * {
@@ -52,7 +54,12 @@ html {
   height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 35px 0;
   /*text-transform: uppercase;*/
   /*font-family: "Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
@@ -63,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h3 {
-  color: #282512;
+  color: #fe0f04;
   text-shadow: 1px 2px 0px rgb(64 92 73 / 70%);
 }
 
@@ -81,7 +88,8 @@ p {
   }
 }
 
-blockquote, tagline {
+blockquote,
+tagline {
   font-family: ComicText;
   font-size: 1.1em;
   line-height: 1.8em;
@@ -101,7 +109,6 @@ ul {
 
 /* Tables */
 table {
-
   background-color: var(--light-green-bg);
   font-size: 1.1em;
   margin-bottom: 40px;
@@ -113,27 +120,35 @@ tr:nth-child(2n+1) {
 
 th {
   height: 3.0em;
-  background-color: var(--comic-red);
+  background-color: white; /* var(--comic-red); */
   font-family: ComicTextBold;
+  color: var(--yellow-font);
   font-size: 1.1em;
-
 }
 
-td, th {
+td,
+th {
   padding: 8px 20px 8px 20px;
   text-align: center;
 }
 
 /* Responsiveness in tables */
-@media only screen and (max-width: 990px), (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (max-width: 990px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
 
   /* Force table to not be like tables anymore */
-  table, thead, tbody, th, td, tr {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
     display: block;
   }
 
   /* Hide table headers (but not display: none;, for accessibility) */
-  thead tr, tr th {
+  thead tr,
+  tr th {
     position: absolute;
     top: -9999px;
     left: -9999px;
@@ -303,7 +318,7 @@ td, th {
 }
 
 #course-info h3 {
-  color: #2a2824;
+  color: #fe0f04;
   text-shadow: 1px 2px 0px rgb(167 139 36 / 70%);
 }
 
@@ -396,7 +411,7 @@ td, th {
 
 /* Custom section types */
 .content-section:before {
-  background-color: #323c18;
+  background-color: #fcd108;
   height: 35px;
   width: 100%;
   left: 0;
@@ -407,6 +422,22 @@ td, th {
 }
 
 .content-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.content-section-1:before {
+  background-color: #cbf4ff;
+  height: 35px;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  margin-top: -60px !important;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.content-section-1 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -529,6 +560,7 @@ footer a {
   transition: background .3s ease-in-out;
   color: #222e23;
   font-family: ComicTextBold;
+  color: var(--yellow-font);
   font-size: 1.6rem;
 }
 
@@ -574,8 +606,7 @@ footer a {
 }
 
 .hamburger-icon {
-  color: #323c18
-
+  color: #fcd108
 }
 
 @media(max-width:768px) {
@@ -635,7 +666,8 @@ footer a {
 }
 
 #docs-and-guides {
-  background-image: url('../img/twdbg.jpg');
+  /* background-image: url('../img/twdbg.jpg'); */
+  background-image: url('../img/happy thomas.jpg');
   background-size: 600px;
 }
 
@@ -648,6 +680,7 @@ footer a {
 .resources-header {
   font-family: ComicTextBold;
   font-size: 1.8rem;
+  color: var(--yellow-font);
   /* margin-left: -2rem; */
 }
 
@@ -658,7 +691,7 @@ footer {
 .intro {
   display: table;
   width: 100%;
-  height: 100vh;
+  height: 10vh;
   text-align: center;
   color: #D21242;
   background: no-repeat top center scroll;
@@ -672,7 +705,7 @@ footer {
   display: table-cell;
   vertical-align: middle;
   /* padding-bottom: 20px; */
-  padding-top: 50px;
+  /* padding-top: 50px; */
   /* background-color: #c0e6b6; */
 
   background-color: var(--green-bg);
@@ -692,7 +725,9 @@ footer {
 
 
 @media(max-width:768px) {
-  html, body {
+
+  html,
+  body {
     width: 100%;
     overflow-x: hidden;
     background-color: var(--green-bg);
@@ -726,7 +761,12 @@ footer {
     border: 1px solid #000;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin: 15px 0;
   }
 
@@ -891,7 +931,9 @@ body {
   border-radius: 5px;
 }
 
-.course-logo-font, .course-logo-font:hover, .course-logo-font:focus {
+.course-logo-font,
+.course-logo-font:hover,
+.course-logo-font:focus {
   font-family: TWDHeaderFont;
   font-size: 35px;
   color: var(--heading-text-color);
@@ -915,7 +957,6 @@ body {
   margin: auto;
   padding: 0;
 }
-
 
 .ta-member {
   margin: 2%;
