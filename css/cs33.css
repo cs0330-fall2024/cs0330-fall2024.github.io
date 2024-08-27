@@ -3,17 +3,14 @@
  */
 
 :root {
-  --heading-text-color: #ffd000;
-  --body-text-color: #e6e4e2;
-  --light-tan-bg: rgb(214, 245, 254);
-  --lighter-tan-bg: #ffffff;
-  --green-bg: #585857;
-  --light-green-bg: #ff817a;
-
-  --camo-brown: #cbf4ff;
-  --camo-gray: #cbf4ff;
-
-  --comic-red: #fcd108;
+  --heading-gold: #FFD700;
+  --subheading-purple: #9926dc;
+  --body-text-color: #000000;
+  --darker-gray-bg: #666666;
+  --background-gray: #c3c3c3;
+  --light-purple-bg: #9926dc;
+  --selection-purple: #c679f376;
+  --medium-gray: #767474;
 
   --yellow-font:  #000000;
 }
@@ -46,7 +43,7 @@ body {
   width: 100%;
   font-family: "Montserrat", Arial, serif;
   /* font-family: ComicText; */
-  background-color: var(--green-bg);
+  background-color: var(--background-gray);
 }
 
 html {
@@ -70,8 +67,8 @@ h6 {
 }
 
 h3 {
-  color: #fe0f04;
-  text-shadow: 1px 2px 0px rgb(64 92 73 / 70%);
+  color: var(--heading-gold);
+  text-shadow: 1px 2px 0px rgb(167 139 36 / 70%);
 }
 
 p {
@@ -109,20 +106,19 @@ ul {
 
 /* Tables */
 table {
-  background-color: var(--light-green-bg);
+  background-color: var(--light-purple-bg);
   font-size: 1.1em;
   margin-bottom: 40px;
 }
 
 tr:nth-child(2n+1) {
-  background-color: var(--lighter-tan-bg);
+  background-color: var(--medium-gray);
 }
 
 th {
   height: 3.0em;
-  background-color: white; /* var(--comic-red); */
+  background-color: var(--medium-gray); /* var(--comic-red); */
   font-family: ComicTextBold;
-  color: var(--yellow-font);
   font-size: 1.1em;
 }
 
@@ -300,25 +296,27 @@ th {
 
 /* Alternate background colors (and adjust text colors to compensate) */
 .section-header {
-  background-color: var(--green-bg);
+  background-color: var(--background-gray);
   height: 50px;
 }
 
 .info-box-opaque {
-  background-color: rgba(245, 245, 245, 0.97);
+  background-color: var(--darker-gray-bg);
   display: flex;
   justify-content: center;
   border-radius: 5px;
   padding: 30px;
 
 }
+#docs-and-guides a:hover {
+    color: var(--background-gray);
+}
 
 #course-info {
-  background-color: var(--green-bg);
+  background-color: var(--background-gray);
 }
 
 #course-info h3 {
-  color: #fe0f04;
   text-shadow: 1px 2px 0px rgb(167 139 36 / 70%);
 }
 
@@ -329,11 +327,11 @@ th {
 
 #course-info blockquote {
   border-left: 5px solid #bbb !important;
-  color: #403e36;
+  color: var(--body-text-color);
 }
 
 #course-info tagline {
-  color: #403e36;
+  color: var(--body-text-color);
 }
 
 #course-info a {
@@ -341,7 +339,7 @@ th {
 }
 
 #assignments {
-  background-color: var(--green-bg);
+  background-color: var(--background-gray);
 }
 
 #assignments a {
@@ -353,11 +351,11 @@ th {
 }
 
 #assignments a:hover {
-  color: #69605a;
+  color: var(--background-gray);
 }
 
 #lectures {
-  background-color: var(--green-bg);
+  background-color: var(--background-gray);
 }
 
 #lectures a {
@@ -369,11 +367,11 @@ th {
 }
 
 #lectures a:hover {
-  color: #69605a;
+  color: var(--background-gray);
 }
 
 #hours {
-  background-color: var(--green-bg);
+  background-color: var(--background-gray);
 }
 
 #hours a {
@@ -383,12 +381,12 @@ th {
 }
 
 #hours a:hover {
-  color: #69605a;
+  color: var(--background-gray);
 }
 
 #staff {
   margin-top: -30px;
-  background-color: var(--camo-gray);
+  background-color: var(--darker-gray-bg);
   width: 100%;
   align-items: center;
 }
@@ -427,7 +425,7 @@ th {
 }
 
 .content-section-1:before {
-  background-color: #cbf4ff;
+  background-color: var(--background-gray);
   height: 35px;
   width: 100%;
   left: 0;
@@ -454,7 +452,7 @@ th {
 
 .section-title {
   font-family: TWDTitleFont;
-  color: var(--heading-text-color);
+  color: var(--heading-gold);
   text-shadow: 2px 2px 0 #adadad;
   /* -webkit-text-stroke: 1px var(--body-text-color)7E; */
   font-size: 40px;
@@ -565,7 +563,7 @@ footer a {
 }
 
 .navbar-custom .nav li a:hover {
-  color: #5a5c5a;
+  color: var(--background-gray);
   background-color: transparent;
 }
 
@@ -579,7 +577,7 @@ footer a {
 }
 
 .navbar-custom .nav li.active a:hover {
-  color: #5a5c5a;
+  color: var(--background-gray);
 }
 
 /* .brand-heading {
@@ -600,7 +598,7 @@ footer a {
 
   .top-nav-collapse {
     padding: 0;
-    background-color: var(--lighter-tan-bg);
+    background-color: var(--darker-gray-bg);
     color: white;
   }
 }
@@ -632,12 +630,12 @@ footer a {
 
   .top-nav-collapse {
     padding: 0;
-    background-color: var(--lighter-tan-bg);
+    background-color: var(--darker-gray-bg);
   }
 
   .navbar-toggle {
     margin-top: 55px !important;
-    color: var(--light-green-bg)
+    color: var(--light-purple-bg)
   }
 
 
@@ -647,7 +645,7 @@ footer a {
 
   .navbar-collapse {
     margin-top: 100px;
-    background-color: var(--lighter-tan-bg);
+    background-color: var(--darker-gray-bg);
     color: var(--body-text-color);
   }
 
@@ -693,7 +691,7 @@ footer {
   width: 100%;
   height: 10vh;
   text-align: center;
-  color: #D21242;
+  color: var(--heading-gold);
   background: no-repeat top center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -708,19 +706,19 @@ footer {
   /* padding-top: 50px; */
   /* background-color: #c0e6b6; */
 
-  background-color: var(--green-bg);
+  background-color: var(--background-gray);
 }
 
 .intro .brand-heading {
   font-size: 50px;
   /* color: #ffffff; */
-  color: var(--heading-text-color);
+  color: var(--heading-gold);
 
 }
 
 .intro-body {
   font-size: 17px;
-  color: var(--heading-text-color)
+  color: var(--heading-gold)
 }
 
 
@@ -730,7 +728,7 @@ footer {
   body {
     width: 100%;
     overflow-x: hidden;
-    background-color: var(--green-bg);
+    background-color: var(--background-gray);
   }
 
   .intro {
@@ -867,14 +865,12 @@ footer {
 */
 ::-moz-selection {
   text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, .2);
+  background: var(--selection-purple);
 }
 
 ::selection {
   text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, .2);
+  background:var(--selection-purple);
 }
 
 img::selection {
@@ -936,7 +932,7 @@ body {
 .course-logo-font:focus {
   font-family: TWDHeaderFont;
   font-size: 35px;
-  color: var(--heading-text-color);
+  color: var(--heading-gold);
   text-shadow: 2px 2px 0 #837957;
   /* text-shadow: 2px 2px 0 var(--body-text-color)7E; */
   /* -webkit-text-stroke: 1px var(--body-text-color)7E; */
