@@ -3,11 +3,11 @@
  */
 
 :root {
-  --heading-text-color: #fe0f04;
-  --body-text-color: #2a1a03;
+  --heading-text-color: #ffd000;
+  --body-text-color: #e6e4e2;
   --light-tan-bg: rgb(214, 245, 254);
   --lighter-tan-bg: #ffffff;
-  --green-bg: #cbf4ff;
+  --green-bg: #585857;
   --light-green-bg: #ff817a;
 
   --camo-brown: #cbf4ff;
@@ -15,7 +15,7 @@
 
   --comic-red: #fcd108;
 
-  --yellow-font:  #35cffe;
+  --yellow-font:  #000000;
 }
 
 @font-face {
