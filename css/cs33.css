@@ -7,7 +7,8 @@
   --subheading-purple: #9926dc;
   --body-text-color: #000000;
   --darker-gray-bg: #666666;
-  --background-gray: #c3c3c3;
+  /* --background-brown: #c3c3c3; */
+  --background-brown: #a7532d;
   --light-purple-bg: #9926dc;
   --selection-purple: #c679f376;
   --medium-gray: #767474;
@@ -35,6 +36,11 @@
   src: url("../img/sf_slapstick_comic/SF Slapstick Comic.ttf");
 }
 
+@font-face {
+    font-family: MedievalSharp;
+    src: url("img/MedievalSharp/MedievalSharp-Regular.ttf");
+}
+
 * {
   color: var(--body-text-color);
 }
@@ -42,8 +48,7 @@
 body {
   width: 100%;
   font-family: "Montserrat", Arial, serif;
-  /* font-family: ComicText; */
-  background-color: var(--background-gray);
+  background-color: var(--background-brown);
 }
 
 html {
@@ -58,10 +63,8 @@ h4,
 h5,
 h6 {
   margin: 35px 0;
-  /*text-transform: uppercase;*/
-  /*font-family: "Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  text-shadow: 2px 2px 0 #adadad;
-  font-family: TWDTitleFont;
+  text-shadow: 2px 2px 0 #837957;
+  font-family: MedievalSharp;
   font-weight: 400;
   letter-spacing: 4px;
 }
@@ -118,7 +121,7 @@ tr:nth-child(2n+1) {
 th {
   height: 3.0em;
   background-color: var(--medium-gray); /* var(--comic-red); */
-  font-family: ComicTextBold;
+  font-family: MedievalSharp;
   font-size: 1.1em;
 }
 
@@ -296,7 +299,7 @@ th {
 
 /* Alternate background colors (and adjust text colors to compensate) */
 .section-header {
-  background-color: var(--background-gray);
+  background-color: var(--background-brown);
   height: 50px;
 }
 
@@ -309,11 +312,11 @@ th {
 
 }
 #docs-and-guides a:hover {
-    color: var(--background-gray);
+    color: var(--background-brown);
 }
 
 #course-info {
-  background-color: var(--background-gray);
+  background-color: var(--background-brown);
 }
 
 #course-info h3 {
@@ -339,7 +342,7 @@ th {
 }
 
 #assignments {
-  background-color: var(--background-gray);
+  background-color: var(--background-brown);
 }
 
 #assignments a {
@@ -351,11 +354,11 @@ th {
 }
 
 #assignments a:hover {
-  color: var(--background-gray);
+  color: var(--background-brown);
 }
 
 #lectures {
-  background-color: var(--background-gray);
+  background-color: var(--background-brown);
 }
 
 #lectures a {
@@ -367,11 +370,11 @@ th {
 }
 
 #lectures a:hover {
-  color: var(--background-gray);
+  color: var(--background-brown);
 }
 
 #hours {
-  background-color: var(--background-gray);
+  background-color: var(--background-brown);
 }
 
 #hours a {
@@ -381,7 +384,7 @@ th {
 }
 
 #hours a:hover {
-  color: var(--background-gray);
+  color: var(--background-brown);
 }
 
 #staff {
@@ -425,7 +428,7 @@ th {
 }
 
 .content-section-1:before {
-  background-color: var(--background-gray);
+  background-color: var(--background-brown);
   height: 35px;
   width: 100%;
   left: 0;
@@ -451,7 +454,7 @@ th {
 }
 
 .section-title {
-  font-family: TWDTitleFont;
+  font-family: MedievalSharp;
   color: var(--heading-gold);
   text-shadow: 2px 2px 0 #adadad;
   /* -webkit-text-stroke: 1px var(--body-text-color)7E; */
@@ -544,7 +547,7 @@ footer a {
   margin-bottom: 0;
   font-size: 0.9em;
   border-bottom: 1px solid rgba(255, 255, 255, .3);
-  font-family: Montserrat, Geneva, sans-serif;
+  font-family: MedievalSharp;
   text-transform: capitalize;
   font-weight: 600;
   display: flex;
@@ -557,13 +560,12 @@ footer a {
   -moz-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
   color: #222e23;
-  font-family: ComicTextBold;
   color: var(--yellow-font);
   font-size: 1.6rem;
 }
 
 .navbar-custom .nav li a:hover {
-  color: var(--background-gray);
+  color: var(--background-brown);
   background-color: transparent;
 }
 
@@ -577,7 +579,7 @@ footer a {
 }
 
 .navbar-custom .nav li.active a:hover {
-  color: var(--background-gray);
+  color: var(--background-brown);
 }
 
 /* .brand-heading {
@@ -706,7 +708,7 @@ footer {
   /* padding-top: 50px; */
   /* background-color: #c0e6b6; */
 
-  background-color: var(--background-gray);
+  background-color: var(--background-brown);
 }
 
 .intro .brand-heading {
@@ -728,7 +730,7 @@ footer {
   body {
     width: 100%;
     overflow-x: hidden;
-    background-color: var(--background-gray);
+    background-color: var(--background-brown);
   }
 
   .intro {
@@ -930,7 +932,7 @@ body {
 .course-logo-font,
 .course-logo-font:hover,
 .course-logo-font:focus {
-  font-family: TWDHeaderFont;
+  font-family: MedievalSharp;
   font-size: 35px;
   color: var(--heading-gold);
   text-shadow: 2px 2px 0 #837957;
