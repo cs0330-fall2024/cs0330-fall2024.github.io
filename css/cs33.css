@@ -1063,3 +1063,7 @@ body {
   justify-content: center;
   /* border-bottom: #2a1a03 solid 1px; */
 }
+
+.background-color-link:hover {
+    color: var(--selection-purple) !important
+}
