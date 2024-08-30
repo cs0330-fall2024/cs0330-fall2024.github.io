@@ -13,7 +13,7 @@
   --selection-purple: #c679f376;
   --medium-gray: #767474;
 
-  --yellow-font:  #000000;
+  --yellow-font: #000000;
 }
 
 @font-face {
@@ -37,8 +37,8 @@
 }
 
 @font-face {
-    font-family: MedievalSharp;
-    src: url("img/MedievalSharp/MedievalSharp-Regular.ttf");
+  font-family: MedievalSharp;
+  src: url("img/MedievalSharp/MedievalSharp-Regular.ttf");
 }
 
 * {
@@ -120,7 +120,8 @@ tr:nth-child(2n+1) {
 
 th {
   height: 3.0em;
-  background-color: var(--medium-gray); /* var(--comic-red); */
+  background-color: var(--medium-gray);
+  /* var(--comic-red); */
   font-family: MedievalSharp;
   font-size: 1.1em;
 }
@@ -311,8 +312,9 @@ th {
   padding: 30px;
 
 }
+
 #docs-and-guides a:hover {
-    color: var(--background-brown);
+  color: var(--background-brown);
 }
 
 #course-info {
@@ -569,7 +571,7 @@ footer a {
   background-color: transparent;
 }
 
-.navbar-custom .nav li a:focus ,
+.navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
   background-color: transparent;
 }
@@ -870,7 +872,7 @@ footer {
 
 ::selection {
   text-shadow: none;
-  background:var(--selection-purple);
+  background: var(--selection-purple);
 }
 
 img::selection {
@@ -1065,5 +1067,13 @@ body {
 }
 
 .background-color-link:hover {
-    color: var(--selection-purple) !important
+  color: var(--selection-purple) !important
+}
+
+.title-ix {
+  color:var(--body-text-color)
+}
+
+.title-ix-onhover:hover {
+  color: var(--body-text-color) !important
 }
