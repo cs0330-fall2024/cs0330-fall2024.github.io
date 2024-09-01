@@ -17,28 +17,18 @@
 }
 
 @font-face {
-  font-family: TWDHeaderFont;
-  src: url("../img/dafont/ThomasAndFriends.ttf");
-}
-
-@font-face {
-  font-family: TWDTitleFont;
-  src: url("../img/dafont/ThomasAndFriends.ttf");
-}
-
-@font-face {
   font-family: ComicText;
-  src: url("../img/sf_slapstick_comic/SF Slapstick Comic.ttf");
+  src: url("../fonts/sf_slapstick_comic/SF Slapstick Comic.ttf");
 }
 
 @font-face {
   font-family: ComicTextBold;
-  src: url("../img/sf_slapstick_comic/SF Slapstick Comic.ttf");
+  src: url("../fonts/sf_slapstick_comic/SF Slapstick Comic.ttf");
 }
 
 @font-face {
   font-family: MedievalSharp;
-  src: url("img/MedievalSharp/MedievalSharp-Regular.ttf");
+  src: url("../fonts/MedievalSharp/MedievalSharp-Regular.ttf");
 }
 
 * {
