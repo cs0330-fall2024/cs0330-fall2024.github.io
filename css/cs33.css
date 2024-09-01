@@ -4,12 +4,12 @@
 
 :root {
   --heading-gold: #FFD700;
-  --subheading-purple: #9926dc;
   --body-text-color: #000000;
   --darker-gray-bg: #666666;
-  /* --background-brown: #c3c3c3; */
-  --background-brown: #a7532d;
-  --light-purple-bg: #9926dc;
+  --background-brown: #8c6e52;
+  --box-bkgrd-brown: #906951;
+  --green-bg: #336659;
+  --hover-purple: #9926dc;
   --selection-purple: #c679f376;
   --medium-gray: #767474;
 
@@ -109,7 +109,7 @@ ul {
 
 /* Tables */
 table {
-  background-color: var(--light-purple-bg);
+  background-color: var(--green-bg);
   font-size: 1.1em;
   margin-bottom: 40px;
 }
@@ -314,7 +314,7 @@ th {
 }
 
 #docs-and-guides a:hover {
-  color: var(--background-brown);
+  color: var(--hover-purple);
 }
 
 #course-info {
@@ -356,7 +356,7 @@ th {
 }
 
 #assignments a:hover {
-  color: var(--background-brown);
+  color: var(--hover-purple);
 }
 
 #lectures {
@@ -372,7 +372,7 @@ th {
 }
 
 #lectures a:hover {
-  color: var(--background-brown);
+  color: var(--hover-purple);
 }
 
 #hours {
@@ -386,7 +386,7 @@ th {
 }
 
 #hours a:hover {
-  color: var(--background-brown);
+  color: var(--hover-purple);
 }
 
 #staff {
@@ -405,6 +405,10 @@ th {
 
 #staff p {
   font-family: "Montserrat", serif;
+}
+
+#staff a:hover {
+  color: var(--hover-purple);
 }
 
 .intro-img {
@@ -451,8 +455,7 @@ th {
   padding: 10px 10px 10px;
   margin-top: 20px;
   margin-bottom: 40px;
-  background-color: #111;
-  background-color: rgba(210, 18, 66, 0.06);
+  background-color: var(--box-bkgrd-brown);
 }
 
 .section-title {
@@ -639,7 +642,7 @@ footer a {
 
   .navbar-toggle {
     margin-top: 55px !important;
-    color: var(--light-purple-bg)
+    color: var(--green-bg)
   }
 
 
@@ -1066,14 +1069,6 @@ body {
   /* border-bottom: #2a1a03 solid 1px; */
 }
 
-.background-color-link:hover {
-  color: var(--selection-purple) !important
-}
-
 .title-ix {
   color:var(--body-text-color)
-}
-
-.title-ix-onhover:hover {
-  color: var(--body-text-color) !important
 }
