@@ -365,6 +365,10 @@ th {
   color: var(--hover-purple);
 }
 
+#lectures .gearup {
+  font-weight: normal;
+}
+
 #hours {
   background-color: var(--background-brown);
 }
@@ -1059,6 +1063,6 @@ body {
   /* border-bottom: #2a1a03 solid 1px; */
 }
 
-.title-ix {
+#staff a {
   color:var(--body-text-color)
 }
