@@ -1064,5 +1064,6 @@ body {
 }
 
 #staff a {
-  color:var(--body-text-color)
+  color:var(--body-text-color);
+  font-weight: bold;
 }
