@@ -3,39 +3,32 @@
  */
 
 :root {
-  --heading-text-color: #fe0f04;
-  --body-text-color: #2a1a03;
-  --light-tan-bg: rgb(214, 245, 254);
-  --lighter-tan-bg: #ffffff;
-  --green-bg: #cbf4ff;
-  --light-green-bg: #ff817a;
+  --heading-gold: #FFD700;
+  --body-text-color: #000000;
+  --darker-gray-bg: #666666;
+  --background-brown: #8c6e52;
+  --box-bkgrd-brown: #906951;
+  --green-bg: #336659;
+  --hover-purple: #9926dc;
+  --selection-purple: #c679f376;
+  --medium-gray: #767474;
 
-  --camo-brown: #cbf4ff;
-  --camo-gray: #cbf4ff;
-
-  --comic-red: #fcd108;
-
-  --yellow-font:  #35cffe;
-}
-
-@font-face {
-  font-family: TWDHeaderFont;
-  src: url("../img/dafont/ThomasAndFriends.ttf");
-}
-
-@font-face {
-  font-family: TWDTitleFont;
-  src: url("../img/dafont/ThomasAndFriends.ttf");
+  --yellow-font: #000000;
 }
 
 @font-face {
   font-family: ComicText;
-  src: url("../img/sf_slapstick_comic/SF Slapstick Comic.ttf");
+  src: url("../fonts/sf_slapstick_comic/SF Slapstick Comic.ttf");
 }
 
 @font-face {
   font-family: ComicTextBold;
-  src: url("../img/sf_slapstick_comic/SF Slapstick Comic.ttf");
+  src: url("../fonts/sf_slapstick_comic/SF Slapstick Comic.ttf");
+}
+
+@font-face {
+  font-family: MedievalSharp;
+  src: url("../fonts/MedievalSharp/MedievalSharp-Regular.ttf");
 }
 
 * {
@@ -45,8 +38,7 @@
 body {
   width: 100%;
   font-family: "Montserrat", Arial, serif;
-  /* font-family: ComicText; */
-  background-color: var(--green-bg);
+  background-color: var(--background-brown);
 }
 
 html {
@@ -61,17 +53,15 @@ h4,
 h5,
 h6 {
   margin: 35px 0;
-  /*text-transform: uppercase;*/
-  /*font-family: "Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  text-shadow: 2px 2px 0 #adadad;
-  font-family: TWDTitleFont;
+  text-shadow: 2px 2px 0 #837957;
+  font-family: MedievalSharp;
   font-weight: 400;
   letter-spacing: 4px;
 }
 
 h3 {
-  color: #fe0f04;
-  text-shadow: 1px 2px 0px rgb(64 92 73 / 70%);
+  color: var(--heading-gold);
+  text-shadow: 1px 2px 0px rgb(167 139 36 / 70%);
 }
 
 p {
@@ -109,20 +99,20 @@ ul {
 
 /* Tables */
 table {
-  background-color: var(--light-green-bg);
+  background-color: var(--green-bg);
   font-size: 1.1em;
   margin-bottom: 40px;
 }
 
 tr:nth-child(2n+1) {
-  background-color: var(--lighter-tan-bg);
+  background-color: var(--medium-gray);
 }
 
 th {
   height: 3.0em;
-  background-color: white; /* var(--comic-red); */
-  font-family: ComicTextBold;
-  color: var(--yellow-font);
+  background-color: var(--medium-gray);
+  /* var(--comic-red); */
+  font-family: MedievalSharp;
   font-size: 1.1em;
 }
 
@@ -300,12 +290,12 @@ th {
 
 /* Alternate background colors (and adjust text colors to compensate) */
 .section-header {
-  background-color: var(--green-bg);
+  background-color: var(--background-brown);
   height: 50px;
 }
 
 .info-box-opaque {
-  background-color: rgba(245, 245, 245, 0.97);
+  background-color: var(--darker-gray-bg);
   display: flex;
   justify-content: center;
   border-radius: 5px;
@@ -313,12 +303,15 @@ th {
 
 }
 
+#docs-and-guides a:hover {
+  color: var(--hover-purple);
+}
+
 #course-info {
-  background-color: var(--green-bg);
+  background-color: var(--background-brown);
 }
 
 #course-info h3 {
-  color: #fe0f04;
   text-shadow: 1px 2px 0px rgb(167 139 36 / 70%);
 }
 
@@ -329,11 +322,11 @@ th {
 
 #course-info blockquote {
   border-left: 5px solid #bbb !important;
-  color: #403e36;
+  color: var(--body-text-color);
 }
 
 #course-info tagline {
-  color: #403e36;
+  color: var(--body-text-color);
 }
 
 #course-info a {
@@ -341,7 +334,7 @@ th {
 }
 
 #assignments {
-  background-color: var(--green-bg);
+  background-color: var(--background-brown);
 }
 
 #assignments a {
@@ -353,11 +346,11 @@ th {
 }
 
 #assignments a:hover {
-  color: #69605a;
+  color: var(--hover-purple);
 }
 
 #lectures {
-  background-color: var(--green-bg);
+  background-color: var(--background-brown);
 }
 
 #lectures a {
@@ -369,11 +362,15 @@ th {
 }
 
 #lectures a:hover {
-  color: #69605a;
+  color: var(--hover-purple);
+}
+
+#lectures .gearup {
+  font-weight: normal;
 }
 
 #hours {
-  background-color: var(--green-bg);
+  background-color: var(--background-brown);
 }
 
 #hours a {
@@ -383,12 +380,12 @@ th {
 }
 
 #hours a:hover {
-  color: #69605a;
+  color: var(--hover-purple);
 }
 
 #staff {
   margin-top: -30px;
-  background-color: var(--camo-gray);
+  background-color: var(--darker-gray-bg);
   width: 100%;
   align-items: center;
 }
@@ -402,6 +399,10 @@ th {
 
 #staff p {
   font-family: "Montserrat", serif;
+}
+
+#staff a:hover {
+  color: var(--hover-purple);
 }
 
 .intro-img {
@@ -427,7 +428,7 @@ th {
 }
 
 .content-section-1:before {
-  background-color: #cbf4ff;
+  background-color: var(--background-brown);
   height: 35px;
   width: 100%;
   left: 0;
@@ -448,13 +449,12 @@ th {
   padding: 10px 10px 10px;
   margin-top: 20px;
   margin-bottom: 40px;
-  background-color: #111;
-  background-color: rgba(210, 18, 66, 0.06);
+  background-color: var(--box-bkgrd-brown);
 }
 
 .section-title {
-  font-family: TWDTitleFont;
-  color: var(--heading-text-color);
+  font-family: MedievalSharp;
+  color: var(--heading-gold);
   text-shadow: 2px 2px 0 #adadad;
   /* -webkit-text-stroke: 1px var(--body-text-color)7E; */
   font-size: 40px;
@@ -546,7 +546,7 @@ footer a {
   margin-bottom: 0;
   font-size: 0.9em;
   border-bottom: 1px solid rgba(255, 255, 255, .3);
-  font-family: Montserrat, Geneva, sans-serif;
+  font-family: MedievalSharp;
   text-transform: capitalize;
   font-weight: 600;
   display: flex;
@@ -559,13 +559,12 @@ footer a {
   -moz-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
   color: #222e23;
-  font-family: ComicTextBold;
   color: var(--yellow-font);
   font-size: 1.6rem;
 }
 
 .navbar-custom .nav li a:hover {
-  color: #5a5c5a;
+  color: var(--heading-gold);
   background-color: transparent;
 }
 
@@ -579,7 +578,7 @@ footer a {
 }
 
 .navbar-custom .nav li.active a:hover {
-  color: #5a5c5a;
+  color: var(--heading-gold);
 }
 
 /* .brand-heading {
@@ -600,7 +599,7 @@ footer a {
 
   .top-nav-collapse {
     padding: 0;
-    background-color: var(--lighter-tan-bg);
+    background-color: var(--darker-gray-bg);
     color: white;
   }
 }
@@ -632,12 +631,12 @@ footer a {
 
   .top-nav-collapse {
     padding: 0;
-    background-color: var(--lighter-tan-bg);
+    background-color: var(--darker-gray-bg);
   }
 
   .navbar-toggle {
     margin-top: 55px !important;
-    color: var(--light-green-bg)
+    color: var(--green-bg)
   }
 
 
@@ -647,7 +646,7 @@ footer a {
 
   .navbar-collapse {
     margin-top: 100px;
-    background-color: var(--lighter-tan-bg);
+    background-color: var(--darker-gray-bg);
     color: var(--body-text-color);
   }
 
@@ -693,7 +692,7 @@ footer {
   width: 100%;
   height: 10vh;
   text-align: center;
-  color: #D21242;
+  color: var(--heading-gold);
   background: no-repeat top center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -706,21 +705,19 @@ footer {
   vertical-align: middle;
   /* padding-bottom: 20px; */
   /* padding-top: 50px; */
-  /* background-color: #c0e6b6; */
-
-  background-color: var(--green-bg);
+  background-color: var(--background-brown);
 }
 
 .intro .brand-heading {
   font-size: 50px;
   /* color: #ffffff; */
-  color: var(--heading-text-color);
+  color: var(--heading-gold);
 
 }
 
 .intro-body {
   font-size: 17px;
-  color: var(--heading-text-color)
+  color: var(--heading-gold)
 }
 
 
@@ -730,7 +727,7 @@ footer {
   body {
     width: 100%;
     overflow-x: hidden;
-    background-color: var(--green-bg);
+    background-color: var(--background-brown);
   }
 
   .intro {
@@ -867,14 +864,12 @@ footer {
 */
 ::-moz-selection {
   text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, .2);
+  background: var(--selection-purple);
 }
 
 ::selection {
   text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, .2);
+  background: var(--selection-purple);
 }
 
 img::selection {
@@ -934,9 +929,9 @@ body {
 .course-logo-font,
 .course-logo-font:hover,
 .course-logo-font:focus {
-  font-family: TWDHeaderFont;
+  font-family: MedievalSharp;
   font-size: 35px;
-  color: var(--heading-text-color);
+  color: var(--heading-gold);
   text-shadow: 2px 2px 0 #837957;
   /* text-shadow: 2px 2px 0 var(--body-text-color)7E; */
   /* -webkit-text-stroke: 1px var(--body-text-color)7E; */
@@ -1066,4 +1061,8 @@ body {
   align-items: flex-end;
   justify-content: center;
   /* border-bottom: #2a1a03 solid 1px; */
+}
+
+#staff a {
+  color:var(--body-text-color)
 }
