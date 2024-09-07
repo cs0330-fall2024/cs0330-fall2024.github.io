@@ -1,4 +1,4 @@
-# cs0330-fall2023.github.io
+# cs0330-fall2024.github.io
 
 ***If you’re a student trying to look to start early, any info in this repo is not yet finalized***
 
