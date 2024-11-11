@@ -49,7 +49,7 @@ int main(int argc, char *argv[ ]) {
     }
     freeaddrinfo(result);
 
-	if (listen(lsocket, 5) < 0) {
+	if (listen(lsocket, 50) < 0) {
 		perror("listen");
 		exit(1);
 	}
